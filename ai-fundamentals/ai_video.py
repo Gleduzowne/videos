@@ -1,7 +1,13 @@
 from manim import *
 from video import create_ai_fundamentals_video  # Import the scene data
 import os
-from ..sequencer.sequencer import Sequencer
+import sys
+
+# Dynamically determine the project root directory
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, PROJECT_ROOT)
+
+from sequencer import Sequencer  # Import the Sequencer class
 
 class AIFundamentals(Scene):
     def construct(self):
@@ -16,7 +22,7 @@ class AIFundamentals(Scene):
 
         for i, scene in enumerate(video_structure):
             # Background
-            bg = Rectangle(width=FRAME_WIDTH, height=FRAME_HEIGHT, 
+            bg = Rectangle(width=config.frame_width, height=config.frame_height, 
                            fill_color=BLUE_E, fill_opacity=0.5)
             self.play(FadeIn(bg))
 
