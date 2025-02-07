@@ -1,7 +1,7 @@
 from manim import *
 from video import create_ai_fundamentals_video  # Import the scene data
 import os
-from sequencer.sequencer import Sequencer
+from ..sequencer.sequencer import Sequencer
 
 class AIFundamentals(Scene):
     def construct(self):
