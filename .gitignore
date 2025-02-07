@@ -1,0 +1,13 @@
+# Manim output directories
+media/
+videos/
+images/
+gifs/
+partial_movie_files/
+
+# Python cache files and directories
+__pycache__/
+*.pyc
+
+# Ignore all .wav files
+*.wav
