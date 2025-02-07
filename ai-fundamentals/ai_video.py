@@ -19,8 +19,8 @@ class AIFundamentals(Scene):
         self.play(background.animate.rotate(0.1), run_time=2)
 
         for scene_index, scene in enumerate(video_structure):
-            # Brief conceptual label to identify the scene idea (optional).
-            label = Text(f"Scene Concept {scene_index+1}", color=YELLOW).scale(0.6).to_corner(UL)
+            # Use the scene’s actual name
+            label = Text(scene.name, color=YELLOW).scale(0.6).to_corner(UL)
             self.play(FadeIn(label))
 
             # Conceptual shape(s) to illustrate the idea.
