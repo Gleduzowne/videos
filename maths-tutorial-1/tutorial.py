@@ -151,7 +151,10 @@ class FaceRecognition(Scene):
     def construct(self):
         face = Circle().scale(2)
         matrix = MobjectMatrix(
-            [[1, 2], [3, 4]],
+            [
+                [MathTex("1"), MathTex("2")],
+                [MathTex("3"), MathTex("4")]
+            ],
             left_bracket="(", right_bracket=")"
         ).scale(0.75).to_edge(RIGHT)
         features = VGroup(
