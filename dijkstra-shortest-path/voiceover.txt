@@ -1,0 +1,21 @@
+Title: How Google Maps Finds the Shortest Route – Dijkstra's Algorithm
+
+Have you ever wondered how Google Maps finds the shortest route? Behind the scenes, it uses a famous computer science method called Dijkstra's algorithm.
+
+Imagine you're planning a trip from your home to a new city. Google Maps takes your starting point and destination, then looks at all the possible roads and intersections. Each road has a distance or travel time, and the goal is to find the quickest path.
+
+Dijkstra's algorithm treats the map as a network of points, called nodes, connected by roads, called edges. It finds the shortest path by always choosing the route with the smallest total distance so far.
+
+Here's how it works:
+1. Start at your location and set its distance to zero. All other points are set to infinity.
+2. Visit the nearest unvisited point, updating distances to its neighbors if a shorter path is found.
+3. Mark the current point as visited and move to the next closest unvisited point.
+4. Repeat until you reach your destination.
+
+For example, imagine five cities: A, B, C, D, and E. You want to travel from A to C. Dijkstra's algorithm checks all possible routes, updating the shortest known distances. Sometimes, going through D and E is actually faster than the direct route, depending on the distances.
+
+This process happens millions of times every day as people use Google Maps to navigate, plan trips, or avoid traffic. The algorithm is fast and efficient, making it possible to get directions in seconds, even for complex road networks.
+
+So next time you use Google Maps, remember: a clever algorithm is working hard to help you find the best way to your destination!
+
+Now, let's watch Dijkstra's algorithm in action.

@@ -11,3 +11,8 @@ __pycache__/
 
 # Ignore all .wav files
 *.wav
+**.mp4
+**.mkv
+**.avi
+**.mov
+**.log

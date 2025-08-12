@@ -1,0 +1,17 @@
+References and Outline:
+
+- Topic: How Google Maps finds the shortest route using Dijkstra’s algorithm
+- Animation: Manim (Python)
+- Voiceover: pico2wave (TTS)
+
+References:
+- https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
+- https://developers.google.com/maps/documentation
+- https://docs.manim.community/
+
+Outline:
+1. Introduction to shortest path problem
+2. Explanation of Dijkstra’s algorithm
+3. Step-by-step animation of the algorithm
+4. Real-world application: Google Maps
+5. Summary
